@@ -184,12 +184,8 @@ h6 {
   -o-object-fit: contain;
   object-fit: contain
 }
-.page__promo {
-  padding-top: 3.8125rem
-}
-.title {
-  font-weight: 700;
-  font-size: 2.75rem;
+.title-posts {
+  font-size: 1.375rem;
   line-height: 1.3636363636
 }
 .text {
@@ -217,11 +213,12 @@ h6 {
   flex: 0 1 31.25rem;
   display: flex;
   flex-direction: column;
-  row-gap: 1.875rem
+  row-gap: 1.8125rem
 }
 .promo__title {
   font-size: 2.75rem;
-  line-height: 1.3636363636
+  line-height: 1.3636363636;
+  font-weight: 700
 }
 .promo__button {
   align-self: flex-start
@@ -240,9 +237,75 @@ h6 {
   width: 100%;
   height: 100%
 }
+.recent-posts {
+  background-color: #edf7fa
+}
+.recent-posts__content {
+  padding-top: 1.375rem;
+  padding-bottom: 1.875rem
+}
+.recent-posts__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+  column-gap: 1.25rem
+}
+.recent-posts__header:not(:last-child) {
+  margin-bottom: .9375rem
+}
+.recent-posts__view-all {
+  flex: 0 0 auto;
+  line-height: 1.4375;
+  color: #00a8cc;
+  transition: color .3s ease 0s
+}
+.recent-posts__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -.625rem;
+  row-gap: 1.25rem
+}
+.recent-posts__item {
+  min-width: 20.625rem;
+  flex: 0 1 50%;
+  padding: 0 .625rem
+}
+.recent-post {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  row-gap: 1.625rem;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 .25rem .625rem 0 rgba(187,225,250,.25);
+  border-radius: .25rem;
+  background-color: #fff
+}
+.recent-post__title {
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.4615384615;
+  transition: color .3s ease 0s
+}
+.recent-post__info {
+  font-size: 1.125rem;
+  line-height: 1.4444444444;
+  display: flex;
+  -webkit-column-gap: .9375rem;
+  -moz-column-gap: .9375rem;
+  column-gap: .9375rem;
+  font-size: 1.125rem
+}
+.recent-post__data {
+  flex: 0 0 auto
+}
+.recent-post__work {
+  flex: 0 0 auto
+}
 @media (min-width:55.375em) {
-  .page__promo {
-    padding-top: 3.8125rem
+  .promo {
+    padding-top: 3.6875rem
   }
   .promo__content {
     padding-top: 4.4375rem
@@ -350,6 +413,10 @@ h6 {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg)
   }
+  .title-posts {
+    text-align: center;
+    font-size: 1.125rem
+  }
   .header__container {
     min-height: 50px
   }
@@ -376,14 +443,41 @@ h6 {
     min-width: 10.67875rem;
     height: 10.67875rem
   }
+  .recent-posts__content {
+    padding-bottom: 2.375rem
+  }
+  .recent-posts__header {
+    justify-content: center
+  }
+  .recent-posts__view-all {
+    display: none
+  }
+  .recent-posts__items {
+    row-gap: 1.0625rem
+  }
+  .recent-post {
+    row-gap: 1.25rem;
+    padding: .75rem 1.25rem 1.25rem 1.25rem
+  }
+  .recent-post__title {
+    font-size: 1.375rem
+  }
+  .recent-post__info {
+    font-size: 1rem
+  }
 }
 @media (max-width:47.99875em)and (any-hover:none) {
   .icon-menu {
     cursor: default
   }
 }
+@media (max-width:41.875rem) {
+  .recent-posts__item {
+    flex: 0 1 100%
+  }
+}
 @media (max-width:23.4375em) {
-  .page__promo {
+  .promo {
     padding-top: .0000000625rem
   }
   .promo__content {
@@ -410,14 +504,14 @@ h6 {
   }
 }
 @media (min-width:23.4375em)and (max-width:55.375em) {
-  @supports (padding-top:clamp(0.0000000625rem ,-2.7978227879rem + 11.9373774951vw ,3.8125rem)) {
-    .page__promo {
-      padding-top: clamp(.0000000625rem ,-2.7978227879rem + 11.9373774951vw ,3.8125rem)
+  @supports (padding-top:clamp(0.0000000625rem ,-2.7060908897rem + 11.5459880626vw ,3.6875rem)) {
+    .promo {
+      padding-top: clamp(.0000000625rem ,-2.7060908897rem + 11.5459880626vw ,3.6875rem)
     }
   }
-  @supports not (padding-top:clamp(0.0000000625rem ,-2.7978227879rem + 11.9373774951vw ,3.8125rem)) {
-    .page__promo {
-      padding-top: calc(.0000000625rem + 3.8124999375*(100vw - 23.4375rem)/ 31.9375)
+  @supports not (padding-top:clamp(0.0000000625rem ,-2.7060908897rem + 11.5459880626vw ,3.6875rem)) {
+    .promo {
+      padding-top: calc(.0000000625rem + 3.6874999375*(100vw - 23.4375rem)/ 31.9375)
     }
   }
   @supports (padding-top:clamp(2.0625rem ,0.3195939335rem + 7.4363992172vw ,4.4375rem)) {
@@ -458,6 +552,12 @@ h6 {
     background-color: #bb4949
   }
   .menu__link:hover {
+    color: #ff6464
+  }
+  .recent-posts__view-all:hover {
+    color: #ff6464
+  }
+  .recent-post__title:hover {
     color: #ff6464
   }
 }
