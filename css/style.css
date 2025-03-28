@@ -191,6 +191,18 @@ h6 {
 .text {
   line-height: 1.4375
 }
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-column-gap: 2.1875rem;
+  -moz-column-gap: 2.1875rem;
+  column-gap: 2.1875rem
+}
+.social__link {
+  font-size: 1.875rem;
+  transition: color .3s ease 0s
+}
 .header__container {
   max-width: 66.375rem;
   min-height: 82px;
@@ -199,6 +211,18 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: flex-end
+}
+.footer__content {
+  padding-top: 3.1875rem;
+  padding-bottom: 3.375rem;
+  text-align: center
+}
+.footer__social:not(:last-child) {
+  margin-bottom: 1.625em
+}
+.footer__copyright {
+  font-size: .875rem;
+  line-height: 1.5
 }
 .works__item {
   display: flex;
@@ -371,6 +395,9 @@ h6 {
   flex: 1 1 auto
 }
 .featured-works__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.625rem;
   padding-top: 1.875rem;
   padding-bottom: 5rem
 }
@@ -737,6 +764,9 @@ h6 {
     background-color: #bb4949
   }
   .menu__link:hover {
+    color: #ff6464
+  }
+  .social__link:hover {
     color: #ff6464
   }
   .works__image:hover {
