@@ -263,8 +263,7 @@ h6 {
   transition: color .3s ease 0s
 }
 ._active {
-  color: #ff6464;
-  pointer-events: none
+  color: #ff6464
 }
 .header__container {
   max-width: 66.375rem;
