@@ -144,7 +144,6 @@ h6 {
 }
 .menu__list {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   row-gap: .3125rem
 }
@@ -267,7 +266,7 @@ h6 {
 }
 .header__container {
   max-width: 66.375rem;
-  min-height: toRer(82);
+  min-height: 5.125rem;
   padding-top: .625rem;
   padding-bottom: .625rem;
   display: flex;
