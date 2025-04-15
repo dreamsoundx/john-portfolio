@@ -6,7 +6,7 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250410155452" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250415190345" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -64,14 +64,17 @@
 			</section>
 			<section class="recent-posts">
 				<div class="recent-posts__container">
-					<div class="recent-posts__content">
+					<div data-showmore="items" class="recent-posts__content">
 						<div class="recent-posts__header">
 							<h2 class="recent-posts__title title-posts">Recent posts</h2>
-							<a class="recent-posts__view-all" href="#">View all</a>
+							<button hidden data-showmore-button class="recent-posts__view-more" type="button">
+								<span>View more</span>
+								<span>Hide</span>
+							</button>
 						</div>
-						<div class="recent-posts__items">
-							<div class="recent-posts__item">
-								<article class="recent-post">
+						<div data-showmore-content="1" class="recent-posts__items">
+							<article class="recent-posts__item">
+								<div class="recent-post">
 									<a class="recent-post__title" href="#">
 										Making a design system from scratch
 									</a>
@@ -87,10 +90,10 @@
 											Exercitation veniam consequat sunt nostrud amet.
 										</p>
 									</div>
-								</article>
-							</div>
-							<div class="recent-posts__item">
-								<article class="recent-post">
+								</div>
+							</article>
+							<article class="recent-posts__item">
+								<div class="recent-post">
 									<a class="recent-post__title" href="#">
 										Creating pixel perfect icons in Figma
 									</a>
@@ -106,8 +109,84 @@
 											Exercitation veniam consequat sunt nostrud amet.
 										</p>
 									</div>
-								</article>
-							</div>
+								</div>
+							</article>
+							<article class="recent-posts__item">
+								<div class="recent-post">
+									<a class="recent-post__title" href="#">
+										UI Interactions of the week
+									</a>
+									<div class="recent-post__info">
+										<div class="recent-post__date">12 Feb 2019</div>
+										<img class="recent-post__separator" src="img/home/recent-posts/icons/recent-posts-divider.svg" alt="divider" />
+										<div class="recent-post__category">Express, Handlebars</div>
+									</div>
+									<div class="recent-post__text text">
+										<p>
+											Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+											amet sint. Velit officia consequat duis enim velit mollit.
+											Exercitation veniam consequat sunt nostrud amet.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="recent-posts__item">
+								<div class="recent-post">
+									<a class="recent-post__title" href="#">
+										UI Interactions of the week
+									</a>
+									<div class="recent-post__info">
+										<div class="recent-post__date">12 Feb 2019</div>
+										<img class="recent-post__separator" src="img/home/recent-posts/icons/recent-posts-divider.svg" alt="divider" />
+										<div class="recent-post__category">Express, Handlebars</div>
+									</div>
+									<div class="recent-post__text text">
+										<p>
+											Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+											amet sint. Velit officia consequat duis enim velit mollit.
+											Exercitation veniam consequat sunt nostrud amet.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="recent-posts__item">
+								<div class="recent-post">
+									<a class="recent-post__title" href="#">
+										UI Interactions of the week
+									</a>
+									<div class="recent-post__info">
+										<div class="recent-post__date">12 Feb 2019</div>
+										<img class="recent-post__separator" src="img/home/recent-posts/icons/recent-posts-divider.svg" alt="divider" />
+										<div class="recent-post__category">Express, Handlebars</div>
+									</div>
+									<div class="recent-post__text text">
+										<p>
+											Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+											amet sint. Velit officia consequat duis enim velit mollit.
+											Exercitation veniam consequat sunt nostrud amet.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="recent-posts__item">
+								<div class="recent-post">
+									<a class="recent-post__title" href="#">
+										UI Interactions of the week
+									</a>
+									<div class="recent-post__info">
+										<div class="recent-post__date">12 Feb 2019</div>
+										<img class="recent-post__separator" src="img/home/recent-posts/icons/recent-posts-divider.svg" alt="divider" />
+										<div class="recent-post__category">Express, Handlebars</div>
+									</div>
+									<div class="recent-post__text text">
+										<p>
+											Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+											amet sint. Velit officia consequat duis enim velit mollit.
+											Exercitation veniam consequat sunt nostrud amet.
+										</p>
+									</div>
+								</div>
+							</article>
 						</div>
 					</div>
 				</div>
@@ -196,7 +275,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20250410155452"></script>
+	<script src="js/app.min.js?_v=20250415190345"></script>
 </body>
 
 </html>

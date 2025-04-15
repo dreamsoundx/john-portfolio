@@ -157,6 +157,15 @@ h6 {
 .icon-menu {
   display: none
 }
+[data-showmore-button] span:last-child {
+  display: none
+}
+._showmore-active [data-showmore-button] span {
+  display: none
+}
+._showmore-active [data-showmore-button] span:last-child {
+  display: block
+}
 .ibg {
   width: 100%;
   height: 100%;
@@ -346,7 +355,7 @@ h6 {
 .recent-posts__header:not(:last-child) {
   margin-bottom: .9375rem
 }
-.recent-posts__view-all {
+.recent-posts__view-more {
   flex: 0 0 auto;
   line-height: 1.4375;
   color: #00a8cc;
@@ -686,7 +695,7 @@ h6 {
   .recent-posts__header {
     justify-content: center
   }
-  .recent-posts__view-all {
+  .recent-posts__view-more {
     display: none
   }
   .recent-posts__items {
@@ -1090,7 +1099,7 @@ h6 {
   .social__link:hover {
     color: #ff6464
   }
-  .recent-posts__view-all:hover {
+  .recent-posts__view-more:hover {
     color: #ff6464
   }
   .recent-post__title:hover {
